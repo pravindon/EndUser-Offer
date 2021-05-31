@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'RPS-Offer-Frontend-EndUser'`, () => {
+  it(`should have as title 'RPS-Offer-Frontend'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('RPS-Offer-Frontend-EndUser');
+    expect(app.title).toEqual('RPS-Offer-Frontend');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('RPS-Offer-Frontend-EndUser app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('RPS-Offer-Frontend app is running!');
   });
 });
